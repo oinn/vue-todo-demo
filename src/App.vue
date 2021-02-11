@@ -1,12 +1,16 @@
 <template>
-  <div id="app">vue-todo-demo</div>
+  <div id="app">
+    <header-block/>
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import HeaderBlock from '@/components/HeaderBlock.vue';
 
 export default Vue.extend({
-  name: 'App'
+  name: 'App',
+  components: { HeaderBlock }
 });
 </script>
 
