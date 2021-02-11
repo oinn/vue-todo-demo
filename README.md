@@ -1,19 +1,19 @@
 # vue-todo-demo
 
-## Project setup
+## Установка проекта
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Компиляция и перезагрузка на лету для разработки
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Компиляция и минификация production
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Настройка конфигурации
+Смотрите [Справочник по конфигурации](https://cli.vuejs.org/config/).
