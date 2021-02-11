@@ -1,5 +1,4 @@
 <template>
-  <!-- Шаблон -->
   <div class="header-block" :class="{ teal: isOwner }">
     <h1 class="title">{{ greeting }}</h1>
     <input placeholder="Введите свое имя" v-model="userName"/>
@@ -7,19 +6,13 @@
 </template>
 
 <script lang="ts">
-// Код
 import Vue from 'vue';
 
 export default Vue.extend({
-  // Общие параметры
   name: 'header-block',
-  
-  // Реактивные данные
   data: () => ({
     userName: ''
   }),
-  
-  // Вычисляемые свойства
   computed: {
     isOwner(): boolean {
       return this.userName === 'Леонид';
@@ -36,8 +29,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-// Стили
-// Знак "@" является ссылкой на /src
 @import "@/styles/variables.scss";
 
 .header-block {

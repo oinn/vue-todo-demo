@@ -1,16 +1,18 @@
 <template>
   <div id="app">
     <header-block/>
+    <body-block/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import HeaderBlock from '@/components/HeaderBlock.vue';
+import BodyBlock from '@/components/BodyBlock.vue';
 
 export default Vue.extend({
   name: 'App',
-  components: { HeaderBlock }
+  components: { HeaderBlock, BodyBlock }
 });
 </script>
 

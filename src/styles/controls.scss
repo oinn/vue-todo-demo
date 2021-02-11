@@ -29,3 +29,8 @@ input {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.layout {
+  display: flex;
+  flex-direction: row;
+}
