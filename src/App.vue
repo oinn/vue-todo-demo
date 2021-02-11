@@ -12,6 +12,7 @@ export default Vue.extend({
 
 <style lang="scss">
 #app {
+  height: 100%;
   display: flex;
   flex-direction: column;
 
