@@ -3,8 +3,12 @@
     <div class="wrapper">
       <div class="layout">
         <input placeholder="Текст задачи" v-model="taskText"/>
-        <button>Добавить</button>
+        <button class="blue">Добавить</button>
       </div>
+
+      <div class="subtitle">Задачи</div>
+
+      <div class="info">Список задач пуст</div>
     </div>
   </div>
 </template>
@@ -29,6 +33,12 @@ export default Vue.extend({
     padding: 16px 0;
     width: 600px;
     height: 100%;
+  }
+
+  .info {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
   }
 }
 </style>
