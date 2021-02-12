@@ -1,8 +1,8 @@
 <template>
   <div class="todo-list-item">
-    <w-checkbox/>
-    <div class="todo-list-item_text">Текст задачи</div>
-    <button class="dense">Удалить</button>
+    <w-checkbox v-model="item.isDone"/>
+    <div class="todo-list-item_text">{{ item.text }}</div>
+    <button class="dense" @click="emitDelete">Удалить</button>
   </div>
 </template>
 
@@ -18,7 +18,15 @@ interface ITodoListItem {
 
 export default Vue.extend({
   name: 'todo-list-item',
-  components: { WCheckbox }
+  components: { WCheckbox },
+  props: {
+    item: Object
+  },
+  methods: {
+    emitDelete(): void {
+      this.$emit('delete', this.item.id);
+    }
+  }
 });
 </script>
 
